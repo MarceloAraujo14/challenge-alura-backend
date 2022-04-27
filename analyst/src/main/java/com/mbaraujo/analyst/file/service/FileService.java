@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
@@ -44,7 +45,7 @@ public class FileService {
         var sucessMessage = "";
 
         try {
-            transactionService.save(file.getInputStream());
+            processTransactions(file);
 
             Files.copy(file.getInputStream(), Path.of(fullpath), StandardCopyOption.REPLACE_EXISTING);
 
@@ -59,6 +60,14 @@ public class FileService {
         repository.save(model);
         return List.of(model.toString(), sucessMessage);
 
+        }
+
+        public void processTransactions(MultipartFile file){
+            try {
+                transactionService.save(file.getInputStream());
+            }catch (Exception e){
+                throw new IllegalStateException(e.getMessage());
+            }
         }
 
 }

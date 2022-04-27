@@ -1,31 +1,30 @@
 package com.mbaraujo.analyst.transaction.validation;
 
 import com.mbaraujo.analyst.transaction.entity.TransactionModel;
-import lombok.AllArgsConstructor;
-import org.springframework.context.annotation.Bean;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-@AllArgsConstructor
+@Log4j2
 public class TransactionValidation {
 
-    private LocalDateTime transactionDate;
+    private LocalDate transactionDate;
 
-    @Bean
     public List<TransactionModel> validTransactions(List<TransactionModel> transactions){
         if(transactions.isEmpty()){
             throw new IllegalArgumentException("Não foram encontradas transações válidas no arquivo.");
         }
-        this.transactionDate = transactions.get(0).getDateTime();
+        transactionDate = transactions.get(0).getDateTime().toLocalDate();
         List<TransactionModel> validList = new ArrayList<>(transactions);
         transactions.forEach(transaction -> {
             if (!isValid(transaction)){
+                log.info(transaction);
                 validList.remove(transaction);
-                this.transactionDate = validList.get(0).getDateTime();
+                transactionDate = validList.get(0).getDateTime().toLocalDate();
             }
         });
 
@@ -40,7 +39,7 @@ public class TransactionValidation {
                 && !transaction.getOriginAccount().isEmpty()
                 && !transaction.getOrignAgency().isEmpty()
                 && !transaction.getOriginBank().isEmpty()
-                && transaction.getDateTime().isEqual(transactionDate);
+                && transaction.getDateTime().toLocalDate().isEqual(transactionDate);
     }
 
 

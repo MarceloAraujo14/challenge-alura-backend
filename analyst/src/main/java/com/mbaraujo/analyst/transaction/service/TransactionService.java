@@ -38,7 +38,6 @@ public class TransactionService {
         sc.useDelimiter("\n").forEachRemaining(transaction -> transacionList.add(mapper.toModel(transaction)));
 
         List<TransactionModel> validList = validation.validTransactions(transacionList);
-
         repository.saveAll(validList);
     }
 }
