@@ -4,128 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c56ead47-cb50-46c5-b1c3-eaf5f3a4698c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/analyst/src/test/java/com/mbaraujo/analyst/ApplicationConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files-example/exemplo.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c56ead47-cb50-46c5-b1c3-eaf5f3a4698c" name="Changes" comment="needs:&#10;- discover error comming from transaction validation">
+      <change afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionsRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files-storage/exemplo.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/005f81d6f6cf0a68ab2c1bfff1064f22d8d5d3ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/010dea03000301f90ac79b776560baf825dfcdaf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05829e8823782279fba178c5836adebe8168692e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06cb13ff44f018159fe65761543d2d3b1e438b6d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0ac9ec2ee51f382b1180171a3c40f3e37f215901" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b3b5cd49de0f52301920d5a796e81fc32cd48a6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0bf618895fdaff77581b1d787715d13681be7285" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0cf5f973238ae003590a3e1fff3de8578c6d5e51" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0dd44e3d62bb61b63b586b2e4b5ddfe806b005b4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/105119035e25a26b84c907a77a84a7e558518c18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/130ecaa0643a38c9c76b10263d44359fc3c850d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14204195c577311ef635f3e08e6042530991918b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/149ea74145e26b4c83398aa249f62851a5814c40" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19de1fc50954a6c3f9b0886a770bdd5436642ddd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1decf7e9cda5871e855780bad1af5830fffc4afd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21a3c0a7783eebf7f9aab268954c2412d169fe87" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24df693037c2aca1b6bf992773c33a8c31453fe7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/25a964751423ae2505e5b3bf99d92907e8ff3b57" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/270540527cb59d1fbe8bdf590204d75131c28ef1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/275d783e298228506068436512433d343feb52aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bf5274ac0ef4ba2dd8c1bf5eb947ffd65b8851c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cbcd21d7e01bb71723f0c770aafcc8d5968a7b0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d45f360574978d2fecaac0c4c4096945cbd14e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d85f969f5baf5208e2d5353d169cc4ecd7e6071" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2ffddd07ad1c0c36c3bd0eb7cef686df87403348" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/3198b5870adf9b8e6f918331d1942e7e5b3248bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31baef506cff1853242c5f0f32d899e23878fb09" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/326a5fe03875588f751ce074084a5f94a9c70d16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35661c5799923768516ab2ef43d60828f95db156" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dde796ed61e5ca00148687803c73222d51bbfef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f3bc7287b48075da462c7964d32b15ec600d85e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40994908998a3bee17fc33af94ccb68ae712e180" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/448c004e9fdda2afc7a59a6f0e73f42fb2e8da8b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44fdc7f3d49aa6f9c5426d17f1acd1e1a89fd141" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47258f8ab70ec227b1cc27b247431802f45011de" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49092ff9ea700448d3755cfaae538a7a5705a3eb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e59aa5e010f885f2d29047a9ab56cfbe37a82de" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51fccf1a6a1eaa054f0be93493bf480dfef0b2a1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5ce664cc58c5194ea8db9213ac42d70a883eab7c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5dde8a7115c6c13d07bad504fc1a996ba1fcbe18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5ed1c00bded3571f661e3c3911c0cbe44c07eeb9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/61fd4918157c43bb5dbdf05064045724fbe374c2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/6284eecedd2d85fb3913164f96df4582210062ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/651418c4af43be927d78a31990c379501faee6f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65a81b9773fdb429af7aa5a07caa1021bf28e46a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66a3fa1380e2c3d3c897918fa606e88a8eba5637" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/693717b61e0aa09d11c736d7ffb6fe9b81a4a42b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b166c16eb119baf0b215ced7c791ff388cb662f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f2bcea28e31728cb204a5a8d94312872b1bbd2b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74a68c8173eaa4e121c7c4dd11baec456d5046b1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/774758a1342c6414c96246e162dacaa47018e711" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/78b158d79d4a615b8bf614d6ee88675e25eba276" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/796e618c37c2cb980dd1b45478a5fc10a47bab35" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7febba08f503e7469cfdc4eb5d93518761b4acab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/845b5784e9e4dcdae2a3fc2103f81004ead9ca9a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/858474d8d215ec25f84b3be6f80418553ae8d1df" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/864d00043ad6c1be056d49cdb616136749cab576" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86ecfa620594dc7b1922a7bc46c2a3b30c4e1134" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8ccbb9388e386e6f3944c782e3d5a9dd5c13aeae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92caafdd2526018d01191b6da5b57a33c45dfab0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9382ddfbab988d45030aa133ec59060f4ff32945" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/962aa691f8de3730ef305d2d905c5a5fcf116aae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/9852914940330060766fca305c4dc24fa2beddf5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d221540a46f06562ca410210e87a391f061d053" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f579365b1fd1c1e96cb157422c82beccc6a1c45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a1ca0b058147d26de8b2f0f382982c63e8d7d974" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a71e9b895c137e23a756afcd6935bbb4b9bf8bc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9903eac503b737983a3fdeffa5e3239ec715c85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab79ecdc2439d64fcc95847ce25af25ff8d762fa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/ace6589961334454480a86f59e0f10db25be36cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad78ef7216c4f1126bf07a6f4445d15101b3dc20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b0bc490715b476bcf90ed8417e458ba0c76741ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b777cbed42b48b281979622f13ad52d84a832131" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b9434b02873119d1602ffc4c7f28b24c7d7aa068" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbbd757d0322a675a46f85792c17ae195babc5d8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbcf560bc6629518d8df2cc946d04946846a0c92" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3869c5e54910438d8305bbf700e866a47ad0411" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c605eed98b1d62e0f67ee9000a99e8338fb6d0f9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c786d2de03e552a197e48a33e4fe4401271f74f5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/cae04005dc6d5074053778faa6c227650d2f5a63" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb71bb31527aa15ac6d828756231c054d74343c8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d11678c90bfb48cd4ba82913af0183975cd069ab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3fa88027a3c7be0e960d399a899603cc27e38c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d5a036b3e867ead09bc9327ebfa93d42b1909e1c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d748d8766080efc90fdc1cab153cb0f95a859ff1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8882ef26a1b9eb6346de857f30885347bdc0fb4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc593a5e298cfee85c417b562bb216dd1388ef0b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd65ad9939248f0564b8c556fa6638fcd404118b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df1b14cba7bcca8982a23e8418e593c2e0f9557d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df4af0c84b0abadd7244c17dcaab48acaaabc1e2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df4d02cb554f878acf5c0ba8e1f4d6f0831d4813" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e11341d3ba4ad50769e9b2a775f4ef6e765e0f51" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e3631492191c257e535ea753f84db0f0f91375fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e544c9a3d5cf937a2ff6d681ca8a8951ce2bf6a3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eef68f206bad838d69f3825f4491b22d89ab1df8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0b62667a262d8a03e4ecd459dc650cae76705b0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0c10ae96703c8d5b4a3fde99474d08d31a0fe01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4fa5985540b58eb276c5f025fe175fde76e9a09" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f61094b53302baba08ee5c0f75609797b82fd17a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7708b974a0374187f3cf558c1e70622c0fe474a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fac27e6dc6fe63d2afcbe4b9fc27b2b13eadc089" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ffb3320e8c9f45b7209d5d55f8e20d520aaa496f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/validation/FileValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/validation/FileValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/mapper/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/mapper/TransactionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/repository/TransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/service/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/validation/TransactionValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/validation/TransactionValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyst/src/test/java/com/mbaraujo/analyst/transaction/validation/TransactionValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/test/java/com/mbaraujo/analyst/transaction/validation/TransactionValidationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/issues-log.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +26,14 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -151,12 +50,14 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -237,6 +138,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mbaraujo.analyst.transaction.mapper" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.AnalystApplication">
     <configuration name="AnalystApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -277,15 +189,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransactionValidationTest.validTransactions5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="analyst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mbaraujo.analyst.transaction.validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mbaraujo.analyst.transaction.validation" />
+      <option name="MAIN_CLASS_NAME" value="com.mbaraujo.analyst.transaction.validation.TransactionValidationTest" />
+      <option name="METHOD_NAME" value="validTransactions5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionValidationTest.validTransactions7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="analyst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mbaraujo.analyst.transaction.validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mbaraujo.analyst.transaction.validation" />
+      <option name="MAIN_CLASS_NAME" value="com.mbaraujo.analyst.transaction.validation.TransactionValidationTest" />
+      <option name="METHOD_NAME" value="validTransactions7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TransactionValidationTest" />
       <item itemvalue="Application.AnalystApplication" />
+      <item itemvalue="JUnit.TransactionValidationTest" />
+      <item itemvalue="JUnit.TransactionValidationTest.validTransactions5" />
+      <item itemvalue="JUnit.TransactionValidationTest.validTransactions7" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AnalystApplication" />
         <item itemvalue="JUnit.TransactionValidationTest" />
+        <item itemvalue="JUnit.TransactionValidationTest.validTransactions7" />
+        <item itemvalue="JUnit.TransactionValidationTest.validTransactions5" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +246,14 @@
       <option name="presentableId" value="Default" />
       <updated>1651005359171</updated>
     </task>
+    <task id="LOCAL-00001" summary="needs:&#10;- discover error comming from transaction validation">
+      <created>1651025820289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651025820289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,5 +269,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="needs:&#10;- discover error comming from transaction validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="needs:&#10;- discover error comming from transaction validation" />
   </component>
 </project>

@@ -26,11 +26,6 @@ public class TransactionService {
     private TransactionValidation validation;
 
     public void save(InputStream transactions) {
-        //receive transactions on string
-        //mapper string to models
-        //insert models on list
-        //validate transactions on list and return valid ones
-        //save valid list
 
         List<TransactionModel> transacionList = new ArrayList<>();
 
@@ -38,6 +33,7 @@ public class TransactionService {
         sc.useDelimiter("\n").forEachRemaining(transaction -> transacionList.add(mapper.toModel(transaction)));
 
         List<TransactionModel> validList = validation.validTransactions(transacionList);
+
         repository.saveAll(validList);
     }
 }

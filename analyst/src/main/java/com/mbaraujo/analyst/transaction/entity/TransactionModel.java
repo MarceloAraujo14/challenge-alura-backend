@@ -1,12 +1,15 @@
 package com.mbaraujo.analyst.transaction.entity;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Objects;
+
 
 @Entity
 @Getter
@@ -16,7 +19,7 @@ public class TransactionModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "transaction_id")
-    @SequenceGenerator(name = "transaction_id", sequenceName = "transaction_id", allocationSize = 1)
+    @SequenceGenerator(sequenceName = "transaction_id", name = "transaction_id", allocationSize = 1)
     private Long id;
     private String originBank;
     private String orignAgency;
@@ -25,7 +28,7 @@ public class TransactionModel {
     private String destinationAgency;
     private String destinationAccount;
     private BigDecimal amount;
-    private LocalDateTime dateTime;
+    private LocalDateTime date;
 
     public TransactionModel(String originBank,
                             String orignAgency,
@@ -42,7 +45,8 @@ public class TransactionModel {
         this.destinationAgency = destinationAgency;
         this.destinationAccount = destinationAccount;
         this.amount = amount;
-        this.dateTime = dateTime;
+        this.date = dateTime;
+
     }
 
     @Override

@@ -21,18 +21,21 @@ public class TransactionMapper {
 
     public TransactionModel toModel(String transaction){
         String[] fields = transaction.split(",");
-        TransactionModel model = new TransactionModel(
-                fields[ORIGIN_BANK],
-                fields[ORIGIN_AGENCY],
-                fields[ORIGIN_ACCOUNT],
-                fields[DESTINY_BANK],
-                fields[DESTINY_ACCOUNT],
-                fields[DESTINY_AGENCY],
-                new BigDecimal(fields[AMOUNT]),
-                LocalDateTime.parse(fields[DATE_TIME])
-        );
+        try {
+            return new TransactionModel(
+                    fields[ORIGIN_BANK],
+                    fields[ORIGIN_AGENCY],
+                    fields[ORIGIN_ACCOUNT],
+                    fields[DESTINY_BANK],
+                    fields[DESTINY_ACCOUNT],
+                    fields[DESTINY_AGENCY],
+                    new BigDecimal(fields[AMOUNT]),
+                    LocalDateTime.parse(fields[DATE_TIME])
+            );
+        }catch (Exception e){
+            return new TransactionModel();
+        }
 
-        return model;
     }
 
 }

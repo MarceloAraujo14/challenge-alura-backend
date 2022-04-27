@@ -1,6 +1,7 @@
 package com.mbaraujo.analyst.transaction.validation;
 
 import com.mbaraujo.analyst.transaction.entity.TransactionModel;
+import com.mbaraujo.analyst.transaction.repository.TransactionRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -23,11 +24,15 @@ class TransactionValidationTest {
     @Autowired
     private TransactionValidation validation;
 
+
+
     private TransactionModel validT1;
     private TransactionModel validT2;
     private TransactionModel validT3;
     private TransactionModel invalidT4;
     private TransactionModel invalidT5;
+    private TransactionModel invalidT6;
+    private TransactionModel invalidT7;
 
     @BeforeEach
     void setUp() {
@@ -82,6 +87,28 @@ class TransactionValidationTest {
                 new BigDecimal("8000"),
                 LocalDateTime.parse("2022-01-02T07:30:00")
         );
+        this.invalidT6 = new TransactionModel(
+                "TRANSACTION5",
+                null,
+                "00001-1",
+                "BANCO BRADESCO",
+                "0001",
+                "00001-1",
+                new BigDecimal("8000"),
+                LocalDateTime.parse("2022-01-01T07:30:00")
+        );
+        this.invalidT7 = new TransactionModel(
+                "TRANSACTION5",
+                "0001",
+                "00001-1",
+                "BANCO BRADESCO",
+                "0001",
+                "00001-1",
+                null,
+                LocalDateTime.parse("2022-01-01T07:30:00")
+        );
+
+
 
 
 
@@ -135,6 +162,34 @@ class TransactionValidationTest {
 
         //given
         List<TransactionModel> list = List.of(invalidT5, validT1, validT2, validT3, invalidT4);
+        //when
+        List<TransactionModel> result = this.validation.validTransactions(list);
+        List<TransactionModel> expect = List.of(validT1, validT2, validT3);
+        //then
+        assertThat(result).isEqualTo(expect);
+
+    }
+
+    @DisplayName("Should not save a transaction if any field is null.")
+    @Test
+    void validTransactions5() {
+
+        //given
+        List<TransactionModel> list = List.of(invalidT5, validT1, validT2, validT3, invalidT4, invalidT6);
+        //when
+        List<TransactionModel> result = this.validation.validTransactions(list);
+        List<TransactionModel> expect = List.of(validT1, validT2, validT3);
+        //then
+        assertThat(result).isEqualTo(expect);
+
+    }
+
+    @DisplayName("Should not save a transaction if any field is null.")
+    @Test
+    void validTransactions6() {
+
+        //given
+        List<TransactionModel> list = List.of(invalidT5, validT1, validT2, validT3, invalidT4, invalidT6, invalidT7);
         //when
         List<TransactionModel> result = this.validation.validTransactions(list);
         List<TransactionModel> expect = List.of(validT1, validT2, validT3);
