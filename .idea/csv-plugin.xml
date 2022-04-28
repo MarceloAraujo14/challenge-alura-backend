@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\files-example\transacoes-2022-01-02.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\files-storage\exemplo.csv">
           <value>
             <Attribute>

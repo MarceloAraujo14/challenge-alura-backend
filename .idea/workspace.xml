@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c56ead47-cb50-46c5-b1c3-eaf5f3a4698c" name="Changes" comment="needs:&#10;- discover error comming from transaction validation">
-      <change afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionsRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files-storage/exemplo.csv" afterDir="false" />
+    <list default="true" id="c56ead47-cb50-46c5-b1c3-eaf5f3a4698c" name="Changes" comment="update:&#10;- fix validation error&#10;need:&#10;- add an entity to save the transactions registers to list imports">
+      <change afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/repository/TransactionRegisterRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/service/TransactionRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files-example/transacoes-2022-01-02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files-storage/transacoes-2022-01-02.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/mapper/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/mapper/TransactionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/file/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/template/TemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/template/TemplateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionsRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/entity/TransactionsRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/validation/TransactionValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/java/com/mbaraujo/analyst/transaction/validation/TransactionValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyst/src/test/java/com/mbaraujo/analyst/transaction/validation/TransactionValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/test/java/com/mbaraujo/analyst/transaction/validation/TransactionValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyst/src/main/resources/templates/success-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/analyst/src/main/resources/templates/success-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -141,6 +143,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/files-example" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -253,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651025820289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update:&#10;- fix validation error&#10;need:&#10;- add an entity to save the transactions registers to list imports">
+      <created>1651092837381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651092837381</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +280,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="needs:&#10;- discover error comming from transaction validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="needs:&#10;- discover error comming from transaction validation" />
+    <MESSAGE value="update:&#10;- fix validation error&#10;need:&#10;- add an entity to save the transactions registers to list imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="update:&#10;- fix validation error&#10;need:&#10;- add an entity to save the transactions registers to list imports" />
   </component>
 </project>

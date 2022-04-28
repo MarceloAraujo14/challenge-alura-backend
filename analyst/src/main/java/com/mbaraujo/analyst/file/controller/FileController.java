@@ -28,7 +28,7 @@ public class FileController {
         }catch (Exception e){
             log.info(e.getMessage());
             model.addAttribute("erro", e.getMessage());
-            return "index";
+            return "redirect:/";
         }
     }
 
