@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\files-storage\transacoes-2022-01-02.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
